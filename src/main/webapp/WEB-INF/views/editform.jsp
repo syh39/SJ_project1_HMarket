@@ -20,7 +20,7 @@
 		<form:hidden path="seq" />
 		<table id="list">
 			<tr>
-				<td id="definition">카테고리</td>
+				<td id="definition">상품명</td>
 				<td><form:input path="category" /></td>
 			</tr>
 			<tr>
