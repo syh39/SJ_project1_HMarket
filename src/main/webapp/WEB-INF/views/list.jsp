@@ -149,7 +149,7 @@ background-color: orange;
 							<div class="panel-heading">${u.seq}</div>
 							<div class="panel-heading">${u.title}</div>
 							<div class="panel-body">
-								<img src={$u.photourl} class="img-responsive" style="width: 100%" alt="Image"/>
+								<img src=${u.photourl} class="img-responsive" style="width: 100%" alt="Image"/>
 							</div>
 							<div class="panel-footer">${u.category}</div>
 							<div class="panel-footer">${u.writer}</div>
@@ -196,44 +196,6 @@ background-color: orange;
 
 
 
-	<table id="list" width="90%">
-		<tr>
-			<th>Id</th>
-			<th>Category</th>
-			<th>Title</th>
-			<th>Writer</th>
-			<th>Content</th>
-			<th>Regdate</th>
-			<th>Edit</th>
-			<th>Delete</th>
-		</tr>
-
-		<c:forEach items="${list}" var="u">
-			<tr>
-				<td>${u.seq}</td>
-				<td>${u.category}</td>
-				<td>${u.title}</td>
-				<td>${u.writer}</td>
-				<td>${u.content}</td>
-				<td>${u.regdate}</td>
-				<td>
-					<div id="editButton">
-						<a id="fontcolor" href="editform/${u.seq}">Edit</a>
-					</div>
-				</td>
-				<td>
-					<div id="deleteButton">
-						<a id="fontcolor" href="javascript:delete_ok('${u.seq}')">Delete</a>
-					</div>
-				</td>
-			</tr>
-		</c:forEach>
-	</table>
-
-	<br />
-	<div id="addButton">
-		<a id="fontcolor" href="add">Add New Post</a>
-	</div>
 
 </body>
 </html>
