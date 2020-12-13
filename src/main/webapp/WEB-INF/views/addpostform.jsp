@@ -12,11 +12,11 @@
 </head>
 <body>
 
-	<h1>Add New Post</h1>
+	<h1>물건 추가</h1>
 	<form action="addok" method="post">
 		<table id="list">
 			<tr>
-				<td id="definition">카테고리</td>
+				<td id="definition">상품명</td>
 				<td><input type="text" name="category" /></td>
 			</tr>
 			<tr>
