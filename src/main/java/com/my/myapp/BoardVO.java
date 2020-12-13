@@ -9,8 +9,17 @@ public class BoardVO {
 	private String writer;
 	private String content;
 	private Date regdate;
+	private String photourl;
 	private int cnt;
  
+	public String getPhotourl() {
+		return photourl;
+	}
+
+	public void setPhotourl(String photourl) {
+		this.photourl = photourl;
+	}
+	
 	public int getSeq() {
 		return seq;
 	}

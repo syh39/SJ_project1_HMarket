@@ -149,9 +149,7 @@ background-color: orange;
 							<div class="panel-heading">${u.seq}</div>
 							<div class="panel-heading">${u.title}</div>
 							<div class="panel-body">
-								<img
-									src="https://image.zdnet.co.kr/2019/10/15/mjjoo_Fg6DzvWQLUGzIl.jpg"
-									class="img-responsive" style="width: 100%" alt="Image">
+								<img src={$u.photourl} class="img-responsive" style="width: 100%" alt="Image"/>
 							</div>
 							<div class="panel-footer">${u.category}</div>
 							<div class="panel-footer">${u.writer}</div>

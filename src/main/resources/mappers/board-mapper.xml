@@ -2,14 +2,14 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Board">
 	<insert id="insertBoard">
-		insert into BOARD (category, title, writer, content)
+		insert into BOARD (category, title, writer, content, photourl)
 		values
-		(#{category}, #{title}, #{writer}, #{content})
+		(#{category}, #{title}, #{writer}, #{content}, #{photourl})
 	</insert>
 	<update id="updateBoard">
 		update BOARD
 		set title=#{title}, content=#{content},
-		writer=#{writer}, category=#{category}
+		writer=#{writer}, category=#{category}, photourl=#{photourl}
 		where seq=#{seq}
 	</update>
 	<delete id="deleteBoard">
